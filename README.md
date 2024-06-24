@@ -5,6 +5,10 @@ This Solidity code creates a token contract named HealthWellnessToken for tracki
 # Description
 This code creates a system where people can earn digital tokens, like points, for doing healthy activities such as burning calories or taking steps. By extending OpenZeppelin's ERC20 implementation, this Solidity contract "HealthWellnessToken," generates a token known as HWTKN. Users may track their health-related activities and receive tokens for steps completed or large calories burnt. Based on these actions, the contract mints tokens, keeps track of them, and lets users exchange tokens for services. It has features to examine logged activity, redeem tokens, and log health-related activities. Tokens are initially issued to the contract deployer.
 
+# Contract Details
+Token Name: HealthWellnessToken
+Token Symbol: HWTKN
+
 # Getting started
 To run this program, you can use Remix, an online Solidity IDE. To get started, go to the Remix website at https://remix.ethereum.org/.
 
