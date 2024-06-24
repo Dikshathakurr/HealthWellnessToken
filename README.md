@@ -7,6 +7,7 @@ This code creates a system where people can earn digital tokens, like points, fo
 
 # Contract Details
 Token Name: HealthWellnessToken
+
 Token Symbol: HWTKN
 
 # Getting started
