@@ -10,6 +10,25 @@ Token Name: HealthWellnessToken
 
 Token Symbol: HWTKN
 
+# Activity Tracking:
+
+Each user's health activities are logged using a structure called HealthActivity.The contract keeps a record of when activities like calories burned or steps taken occur for each user.
+
+ # Functions:
+ 
+1) Log Health Activity:
+
+Users can record their health activities using logHealthActivity.Tokens are earned based on the intensity of the activities (e.g., more tokens for burning more calories or taking more steps).
+
+2) Redeem Tokens:
+
+Tokens earned can be redeemed for services using redeemTokens.
+Users specify the amount of tokens they want to use and the service they want to redeem them for.
+
+3) View Activities:
+
+getUserActivities allows users to see a history of their logged health activities.
+
 # Getting started
 To run this program, you can use Remix, an online Solidity IDE. To get started, go to the Remix website at https://remix.ethereum.org/.
 
@@ -31,8 +50,10 @@ To run this program, you can use Remix, an online Solidity IDE. To get started, 
  5) To burn tokens for services, make the redeemTokens function available.
  6) To obtain user activities, create a getUserActivities function.
 
-To compile the code, click on the "Solidity Compiler" tab in the left-hand sidebar. Make sure the "Compiler" option is set to "0.8.0" (or another compatible version), and then click on the "Compile Healthwellness.sol" button.Once the code is compiled, you can deploy the contract by clicking on the "Deploy & Run Transactions" tab in the left-hand sidebar. Once the contract is deployed, you can interact with it. 
+To compile the code, click on the "Solidity Compiler" tab in the left-hand sidebar. Make sure the "Compiler" option is set to "0.8.0" (or another compatible version), and then click on the "Compile Healthwellness.sol" button.Once the code is compiled, you can deploy the contract by clicking on the "Deploy & Run Transactions" tab in the left-hand sidebar. Once the contract is deployed, you can interact with it.
 
+# Testing 
+Compile the code to ensure it works correctly and simulate transactions to verify functionality.
 
 # Author
 Diksha Thakur
