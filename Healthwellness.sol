@@ -15,7 +15,7 @@ contract HealthWellnessToken is ERC20 {
     event TokensRedeemed(address indexed user, uint amount, string service);
 
     constructor() ERC20("HealthWellnessToken", "HWTKN") {
-        _mint(msg.sender, 1000000 * 10 ** decimals()); // Mint 
+        _mint(msg.sender, 1000000 * 10 ** decimals()); // Mint initial tokens to contract deployer
     }
 
     function logHealthActivity(uint caloriesBurned, uint stepsTaken) external {
@@ -41,8 +41,7 @@ contract HealthWellnessToken is ERC20 {
             timestamp: block.timestamp,
             caloriesBurned: caloriesBurned,
             stepsTaken: stepsTaken
-        }
-        ));
+        }));
     }
 
     function redeemTokens(uint amount, string memory service) external {
@@ -54,5 +53,8 @@ contract HealthWellnessToken is ERC20 {
     function getUserActivities(address user) external view returns (HealthActivity[] memory) {
         return userActivities[user];
     }
-}
 
+    function transferTo(address to, uint amount) public {
+        transfer(to, amount);
+    }
+}
