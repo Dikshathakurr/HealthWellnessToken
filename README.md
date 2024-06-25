@@ -51,9 +51,9 @@ To run this program, you can use Remix, an online Solidity IDE. To get started, 
 4)Deploy the HealthwellnessToken contract .
 5) Firstly call health activity with paramters like calories burned,step taken to record activities
 6) Use reedem tokens to burn tokens . after this call transfer token to another address using trasfer to .
-7)After this step call the logged activity function to get user activities.
-5) Then, check transaction details.
-6) Save the file with a .sol extension.
+7) After this step call the logged activity function to get user activities.
+8) Then, check transaction details.
+9) Save the file with a .sol extension.
 
 To compile the code, click on the "Solidity Compiler" tab in the left-hand sidebar. Make sure the "Compiler" option is set to "0.8.0" (or another compatible version), and then click on the "Compile Healthwellness.sol" button.Once the code is compiled, you can deploy the contract by clicking on the "Deploy & Run Transactions" tab in the left-hand sidebar. Once the contract is deployed, you can interact with it.
 
